@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/temperature.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Temperature Converter</h1>
+      <div>
+        <input type="radio" name="conversion" id="to_celsius" checked />
+        Fahrenheit to Celsius<br />
+        <input type="radio" name="conversion" id="to_fahrenheit" checked />
+        Celsius to Fahrenheit
+      </div>
+      <div>
+        <label id="degree_label_1">Enter F degrees:</label>
+        <input type="number" id="degrees_entered" />
+      </div>
+      <div>
+        <label id="degree_label_2">Degrees Celsius:</label>
+        <input type="number" id="degrees_computed" disabled />
+      </div>
+      <div>
+        <label></label>
+        <input type="button" id="convert" value="Convert" />
+        <p id="message"></p>
+      </div>
+    </main>
+    <script src="js/convert_temps.js"></script>
+  </body>
+</html>
